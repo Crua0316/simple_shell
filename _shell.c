@@ -7,11 +7,13 @@
 
 int main()
 {
-	char *prom, **argu;
-
-	prom = prompt();
-	printf("Buffer, input till now is: %s\n", prom);
-	argu = tokens(prom);
-	free_all(2, prom, argu);
+	char *buffer, **argu;
+	while (1)
+	{
+		buffer = prompt();
+		argu = tokens(buffer);
+		_execute(argu);
+		free_all(2, buffer, argu);
+	}
 	return (0);
 }

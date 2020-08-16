@@ -1,41 +1,46 @@
 #include "holberton.h"
 /**
- * token
+ * tokens - 
 */
 char **tokens(char *command)
 {
-	int i, j;
+	int i, j, len;
 	char *duplicate, *token;
 	char **argu;
 
-	// Counting the token total number
+	//checking last char different from \n
+	command = new_line_check(command);
 
+	// Counting the token total number
 	i = 1;
 	duplicate = strdup(command);
-	//printf("Duplicate went out well: %s\n", duplicate);
+	printf("Duplicate went out well: %s\n", duplicate);
 	token = strtok(duplicate, " ");
-	//printf("First token should be the string itself: %s\n", token);
+	printf("First token should be the string itself: %s\n", token);
 
 	while (token != NULL)
 	{
 		token = strtok(NULL, " ");
-		//printf("Each token till now is: %s\n", token);
+		printf("Each token till now is: %s\n", token);
 		i++;
 	}
+	//Freing duplicate string: CHECK IF ERROR REPORT NECESARY
+	free(duplicate);
 
-	// allocating space for the maximum number of arguments
+	// allocating space for the maximum number of arguments and checking status
 
 	argu = malloc(sizeof(char *) * i);
+	if (!argu)
+		return (NULL);
 
 	// Saving each token
 
-	token = strtok(command, " ");
-	j = 0;
-	while (token != NULL)
+	argu[0] = strtok(command, " ");
+	j = 1;
+	while (argu[j] != NULL)
 	{
-		argu[j] = token;
-		token = strtok(NULL, " ");
-		//printf("token #%i: %s, which is allocated in this memory direction: [%p]\n", j, argu[j], token);
+		argu[j] = strtok(NULL, " ");
+		printf("token #%i: %s, which is allocated in this memory direction: [%p]\n", j, argu[j], token);
 		j++;
 	}
 

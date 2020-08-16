@@ -6,12 +6,9 @@ char *prompt(void)
 	size_t size;
 	//signal(SIGINT, signal_handler);
 
-	while (i < 1)
-	{
-		printf("#cisfun$ ");
-		getline(&buffer, &size, stdin);
-		i++;
-	}
+	printf("#cisfun$ ");
+	getline(&buffer, &size, stdin);
+	i++;
 
 	return (buffer);
 }
