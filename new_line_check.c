@@ -1,6 +1,9 @@
 #include "holberton.h"
 /**
- * new_line_check - checks if last line is a new line character and turns it to null
+ * new_line_check - checks if last line is a new line character
+ * and turns it to null
+ * @command: string passed as input from the command line
+ * Return: pointer to the same string without the new line character
 */
 char *new_line_check(char *command)
 {

@@ -4,10 +4,14 @@
 #include <string.h>
 #include <unistd.h>
 #include "holberton.h"
-
-int main()
+/**
+ * main - executes initial functions to run the mini shell
+ * Return: 0
+*/
+int main(void)
 {
 	char *buffer, **argu;
+
 	while (1)
 	{
 		buffer = prompt();

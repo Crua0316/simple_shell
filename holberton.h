@@ -6,6 +6,8 @@
 #include <string.h>
 #include <unistd.h>
 #include <stdarg.h>
+#include <sys/types.h>
+#include <sys/wait.h>
 
 void signal_handler(int num);
 
@@ -15,5 +17,8 @@ void free_all(const unsigned int n, ...);
 
 char **tokens(char *str);
 
+void _execute(char **command);
+
+char *new_line_check(char *command);
 
 #endif /* _HOLBERTON_H_ */

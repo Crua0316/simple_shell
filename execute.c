@@ -1,4 +1,8 @@
 #include "holberton.h"
+/**
+ * _execute - gets command line tokens and executes when possible
+ * @command: tokens obtaind from command line
+*/
 
 void _execute(char **command)
 {
@@ -10,14 +14,7 @@ void _execute(char **command)
 	if (pid == -1)
 	{
 		perror("Error:");
-		//return (1);
 	}
-
-	/*while (command[i] != NULL)
-	{
-		printf("token[%i] = %s\n", i, command[i]);
-		i++;
-	}*/
 
 	if (pid == 0)
 	{
