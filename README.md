@@ -126,7 +126,6 @@ $
 ### Resources
 
 **Read or watch:**
-* [The Magic Behind the Command ls -l](https://medium.com/@juanllano93/the-magic-behind-the-command-ls-l-d9fd3081a3d0)
 * [Thompson shell](https://en.wikipedia.org/wiki/Thompson_shell)
 * [Ken Thompson](https://en.wikipedia.org/wiki/Ken_Thompson)
 
