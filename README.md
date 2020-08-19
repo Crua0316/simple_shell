@@ -79,7 +79,7 @@ This consists of interpreting orders. It incorporates features such as process c
 
 ### Download
 You can clone this repository this way:
-`git clone https://github.com/nathsotomayor/simple_shell.git`
+`git clone https://github.com/Crua0316/simple_shell`
 
 ### Compilation
 Your shell will be compiled this way:
