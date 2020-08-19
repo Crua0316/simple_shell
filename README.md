@@ -1,10 +1,3 @@
-[![Bash Shell](https://badges.frapsoft.com/bash/v1/bash.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
-[![GitHub contributors](https://img.shields.io/github/contributors/nathsotomayor/simple_shell?style=plastic)](https://github.com/nathsotomayor/simple_shell/graphs/contributors)
-
-<img src="https://miro.medium.com/max/2700/1*Nj9f2Ej5PaEp3N3k57lutg.png"
-     alt="shell_holberton_cali"
-     style="float: left; margin-right: 10px;">
-
 # Simple shell
 In this project we'll create a simple UNIX command interpreter in C programming language.
 
@@ -127,11 +120,6 @@ $
 
 ##|File|Description
 ---|---|---
-
-
-### Flowchar
-[Flowchar](https://www.lucidchart.com/documents/view/4625fbe1-cebb-42da-b67d-5e6e437f4e4d)
-
 
 ## Extra information
 
