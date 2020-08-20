@@ -37,7 +37,7 @@ char **tokens(char *command)
 
 	j = 1;
 
-	while((argu[j] = strtok(NULL, " ")))
+	while ((argu[j] = strtok(NULL, " ")))
 		j++;
 
 	return (argu);
