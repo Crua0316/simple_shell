@@ -29,16 +29,16 @@ char **tokens(char *command)
 	free(duplicate);
 
 	argu = malloc(sizeof(char *) * i);
+
 	if (!argu)
 		return (NULL);
 
 	argu[0] = strtok(command, " ");
+
 	j = 1;
-	while (argu[j] != NULL)
-	{
-		argu[j] = strtok(NULL, " ");
+
+	while ((argu[j] = strtok(NULL, " ")))
 		j++;
-	}
 
 	return (argu);
 }
