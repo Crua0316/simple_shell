@@ -119,7 +119,7 @@ link_t *linker(char *paths)
 {
 	link_t *head = NULL;
 	char *token;
-	char *copy_path = strdup(paths);
+	char *copy_path = _strdup(paths);
 
 	token = strtok(copy_path, ":");
 	while (token)
