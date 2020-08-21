@@ -2,6 +2,7 @@
 /**
  * check_input - checks whether input is a filesystem command
  * or a built-in.
+ * @argv: double pointer to string
  * Return: 0 on success, -1 on failure.
 */
 int check_input(char **argv)
@@ -21,18 +22,19 @@ int check_input(char **argv)
 	return (0);
 }
 /**
- * _init - gets environment list and first token from input
+ * _inicio - gets environment list and first token from input
  * @name: name of the command from the command line
  * Return: full path of the find command
 */
 char *_inicio(char *name)
 {
-	if (!name)
-		return (NULL);
-
 	char *value;
 	char *dir;
 	link_t *head;
+	/*link_t *temp;*/
+
+	if (!name)
+		return (NULL);
 
 	/*signal(SIGINT, signal_handler);*/
 
@@ -40,5 +42,16 @@ char *_inicio(char *name)
 	value = get_env("PATH");
 	head = linker(value);
 	dir = _which(name, head);
+	/*
+	* temp = head;
+	*
+	* while (temp)
+	* {
+	*	free(head->dir);
+	*	temp = temp->next;
+	*	free(head);
+	*	head = temp;
+	* }
+	*/
 	return (dir);
 }
