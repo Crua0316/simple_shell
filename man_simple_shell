@@ -85,12 +85,7 @@ are handled automatically by
 .B simple shell
 
 .SH SEE ALSO
-.I sh(1)
-,
-.I bash(1)
-,
-.I _printf(3)
-.SH FILES
+
 .I prompt.c 
 - Contains the int main(void) function, entry point.
 
