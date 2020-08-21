@@ -22,7 +22,7 @@ void _env(char **argv)
 	while (environ[i])
 	{
 		_puts(environ[i]);
-		_puts('\n');
+		_puts("\n");
 		i++;
 	}
 }
