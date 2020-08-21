@@ -1,5 +1,8 @@
 #include "holberton.h"
-
+/**
+ * free_all - frees memory
+ * @n: number of arguments
+*/
 void free_all(const unsigned int n, ...)
 {
 	va_list init;

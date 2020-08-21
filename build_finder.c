@@ -1,8 +1,9 @@
 #include "holberton.h"
 /**
- *  check_build - Checks if command is a built_in 
+ *  check_build - Checks if command is a built_in
  *  @argv: double pointer indicating the array of strings from where
  *  to find the command.
+ *  Return: pointer to function
 */
 void (*check_build(char **argv))(char **argv)
 {

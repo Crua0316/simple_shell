@@ -5,21 +5,18 @@
 */
 char *prompt(void)
 {
-	char *buffer;
 	size_t size;
 	int getline_int;
-	int isatty_int;
+	char *buffer = NULL;
 
-	isatty_int = isatty(STDIN_FILENO);
-	buffer = NULL;
-
-	if (isatty_int == 1)
-		printf("#cisfun$ ");
+	if (isatty(STDIN_FILENO))
+		_puts("$ ");
 
 	getline_int = getline(&buffer, &size, stdin);
 
-	if (isatty_int == 0 && getline_int == EOF)
+	if (getline_int == EOF)
 	{
+		free(buffer);
 		exit(0);
 	}
 

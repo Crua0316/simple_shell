@@ -1,6 +1,7 @@
 #include "holberton.h"
 /**
  * myexit - executes the exit built in
+ * @argv: double pointer to string.
 */
 void myexit(char **argv)
 {
@@ -8,7 +9,8 @@ void myexit(char **argv)
 	exit(0);
 }
 /**
- * env - prints environment list
+ * _env - prints environment list
+ * @argv: double pointer to string
 */
 void _env(char **argv)
 {
@@ -19,7 +21,8 @@ void _env(char **argv)
 
 	while (environ[i])
 	{
-		printf("%s\n", environ[i]);
+		_puts(environ[i]);
+		_puts("\n");
 		i++;
 	}
 }
