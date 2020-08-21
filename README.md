@@ -120,6 +120,12 @@ $
 ##|File|Description
 ---|---|---
 
+### Flowchart
+
+<img src="https://i.ibb.co/yP9JPkt/Shell-Flowchart.jpg"
+     alt="Flowchart"
+     style="float: left; margin-right: 10px;">
+
 ## Extra information
 
 ### Resources
