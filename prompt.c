@@ -10,7 +10,7 @@ char *prompt(void)
 	char *buffer = NULL;
 
 	if (isatty(STDIN_FILENO))
-		_puts("#cisfun$ ");
+		_puts("$ ");
 
 	getline_int = getline(&buffer, &size, stdin);
 
