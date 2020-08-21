@@ -16,9 +16,11 @@ char **tokens(char *command)
 	char **argu;
 
 	command = new_line_check(command);
+	if (!command)
+		return (NULL);
 
 	i = 1;
-	duplicate = strdup(command);
+	duplicate = _strdup(command);
 	token = strtok(duplicate, " ");
 
 	while (token != NULL)
@@ -38,7 +40,9 @@ char **tokens(char *command)
 	j = 1;
 
 	while ((argu[j] = strtok(NULL, " ")))
+	{
 		j++;
+	}
 
 	return (argu);
 }

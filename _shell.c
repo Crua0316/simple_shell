@@ -11,11 +11,23 @@ int main(void)
 	{
 		buffer = prompt();
 		if (!buffer)
-			printf("hello");
+			_puts(" :Error");
+
 		argu = tokens(buffer);
+
+		if (argu == NULL)
+			continue;
+
 		check_input(argu);
 		argu[0] = _inicio(argu[0]);
+		if (argu[0] == NULL)
+		{
+			/*perror("MACRO");*/
+			continue;
+		}
+
 		_execute(argu);
+
 		free_all(2, buffer, argu);
 		/*free(argu[0]);*/
 	}
