@@ -22,7 +22,6 @@ int main(void)
 		argu[0] = _inicio(argu[0]);
 		if (argu[0] == NULL)
 		{
-			/*perror("MACRO");*/
 			continue;
 		}
 
