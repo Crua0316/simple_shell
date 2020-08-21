@@ -74,6 +74,7 @@ int _putchar(char c);
 
 void _env(char **argv);
 
+char *_strdup(char *str);
 /*void signal_handler(int num);*/
 
 #endif /* _HOLBERTON_H_ */
