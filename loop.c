@@ -15,7 +15,7 @@ int main(int ac, char **av)
 	{
 		if (isatty(STDIN_FILENO))
 		{
-			write(STDIN_FILENO, "#cisfun$ ", 9);
+			write(STDOUT_FILENO, "#cisfun$ ", 9);
 		}
 
 		line = readinput();

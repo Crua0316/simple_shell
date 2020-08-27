@@ -21,9 +21,8 @@ void _exec(char *command, char **args)
 		if (execve(command, args, environ) == -1)
 		{
 			perror("Error exec: ");
-			exit(errno);
+			exit(EXIT_FAILURE);
 		}
-		exit(errno);
 	}
 	else
 	{
