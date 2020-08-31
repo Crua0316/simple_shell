@@ -145,4 +145,4 @@ $
 
 ---
 
-` Made with 💛 in Holberton School Colombia (Medellín) 
+` Made with (💛) in Holberton School Colombia (Medellín) 
