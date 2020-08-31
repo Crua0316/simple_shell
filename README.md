@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Simple shell
 In this project we'll create a simple UNIX command interpreter in C programming language.
 
@@ -145,4 +146,4 @@ $
 
 ---
 
-` Made with (💛) in Holberton School Colombia (Medellín) 
+` Made with 💛 in Holberton School Colombia (Medellín) 

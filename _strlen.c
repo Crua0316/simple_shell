@@ -1,18 +1,20 @@
 #include "holberton.h"
 /**
- * _strlen - calculates a string length.
- * @str: string to find it's length.
- * Return: int which is the final length.
+ * _strlen - calculates length of the string
+ * @str: pointer to string
+ * Return: integer number of the size
 */
 int _strlen(char *str)
 {
-	int i;
+	int i = 0;
 
-	i = 0;
+	if (!str)
+		return (0);
 
-	while (str[i] != '\0')
+	while (str[i])
 	{
 		i++;
 	}
+
 	return (i);
 }
